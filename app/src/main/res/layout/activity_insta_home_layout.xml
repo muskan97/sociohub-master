@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical"
+
+    tools:context="com.example.hp.sociohub.InstagramHome">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#df1d2a"
+        android:id="@+id/action_bar">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="INSTAGRAM"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+           android:textSize="20dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOME"
+            android:textColor="#fff"
+            android:textSize="15dp"
+            android:textStyle="bold"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="19dp"
+            android:onClick="finish"/>
+
+
+
+
+    </RelativeLayout>
+
+
+
+    <WebView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/instagram_web"
+        android:layout_below="@+id/action_bar">
+
+    </WebView>
+
+
+
+</RelativeLayout>

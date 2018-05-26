@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#81b5f9"
+        android:id="@+id/top_bar"
+        android:gravity="center_vertical">
+
+     <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:src="@drawable/ic_action_arroww"
+         android:layout_marginLeft="5dp"
+         android:onClick="finish_activity9"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TWITTER"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="#fff"
+        />
+    </LinearLayout>
+
+    <com.twitter.sdk.android.core.identity.TwitterLoginButton
+        android:id="@+id/login_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</FrameLayout>
